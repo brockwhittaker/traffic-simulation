@@ -1,0 +1,105 @@
+/* -- vars should not appear in this section -- */
+$light-grey = #FAFAFA
+$dark-grey = #444
+$font-stack = 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, Sans-Serif
+$border = 1px solid #CCC
+$turquoise = #56A9B4
+/* -------------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700)
+
+* {
+  text-shadow: 0 0 0
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+}
+
+body {
+  background-color: $light-grey
+  font-family: $font-stack
+  font-size: 10pt
+  font-weight: 400
+  color: $dark-grey
+  text-align: center
+  margin: 0
+}
+
+canvas {
+  margin-top: 20px
+  border: $border
+  display: inline-block
+  background-color: #FFF
+}
+
+.logo {
+  z-index: 10
+  font-weight: 500
+  font-size: 20pt
+  letter-spacing: -1.5pt
+  text-align: center
+
+  width: 150px
+  padding: 10px 0px
+
+  color: #CCC
+  border: 3px solid #CCC
+
+  pointer-events: none
+
+  transition: all 0.2s ease
+
+  margin-left: 20px
+  margin-top: 20px
+}
+
+.link {
+  cursor: pointer
+}
+
+.city-section {
+  width: 80%
+  text-align: left
+  float: left
+  background-color: #FFF
+  margin: 10px 10%
+  padding: 0px 10px
+  border: $border
+}
+
+.city-section .population-stat {
+  margin-bottom: 20px
+}
+
+.city-section .ind-route {
+  float: left
+  margin: 0px 20px 20px 0px
+}
+
+.city-section p {
+  margin: 0
+  color: #888
+}
+
+.city-section h3 {
+  margin: 0 0 10px 0
+}
+
+.city-section h2 {
+  color: $turquoise
+}
+
+#stats {
+  display: inline-block
+}
+
+#stats table {
+  text-align: left
+}
+
+#stats thead {
+  font-weight: 500
+}
+
+#stats table td {
+  padding: 2px 30px
+}
